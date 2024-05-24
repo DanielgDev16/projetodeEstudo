@@ -1,0 +1,122 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+:root{
+    --Moderate: violet hsl(263, 55%, 52%);
+    --Very-dark-grayish: blue hsl(217, 19%, 35%);
+    --Very-dark-blackish: blue hsl(219, 29%, 14%);
+    --White: hsl(0, 0%, 100%);
+
+    --Light: gray hsl(0, 0%, 81%);
+    --Light-grayish: blue hsl(210, 46%, 95%);
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: hsl(210, 46%, 95%);
+}
+
+.container{
+    width: 1200px;
+    height: 550px;
+    
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    padding: 0 20px;
+    gap: 25px;
+}
+
+.container img{
+    border-radius: 30px;
+    border: 3px solid gray;
+    width: 40px;
+}
+
+.container p{
+    color: white;   
+}
+
+.container span{
+    font-size: 12px;
+    color: rgb(173, 173, 173);
+}
+
+.container .text{ 
+    color: white;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.container .text_principal{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.container .text_principal h3{
+    color: rgb(173, 173, 173);
+}
+
+.container h2,h3{
+    font-size: 10px;
+}
+
+.info1{
+    /* display: flex;
+    flex-direction: column; */
+    background-color: hsl(263, 55%, 52%);
+    border-radius: 10px;
+    padding: 10px ;
+    
+}
+
+.info2{
+    background-color: hsl(217, 19%, 35%);
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.info3{
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 10px;
+    grid-row: 1/4;
+}
+
+.info3 .text_principal h2{
+    color: black;
+}
+
+.info3 p{
+    color: black;
+}
+
+.info4 {
+    background-color: #fff;
+    border-radius: 10px;
+    
+    padding: 10px;
+}
+
+.info4 .text_principal h2{
+    color: black;
+}
+
+.info4 p{
+    color: black;
+}
+
+.info5{
+    background-color: hsl(219, 29%, 14%);
+    border-radius: 10px;
+    padding: 10px;
+}
